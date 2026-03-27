@@ -23,15 +23,65 @@ export default function Hero({ scrollY }) {
         transition: "left 0.3s ease-out, top 0.3s ease-out", zIndex: 0,
       }} />
 
-      {/* Parallax orbs */}
-      <div style={{ position: "absolute", width: 300, height: 300, borderRadius: "50%", background: `radial-gradient(circle, ${t.gFrom}12, transparent)`, top: `calc(10% - ${scrollY * 0.15}px)`, right: "5%", pointerEvents: "none" }} />
-      <div style={{ position: "absolute", width: 200, height: 200, borderRadius: "50%", background: `radial-gradient(circle, ${t.gTo}10, transparent)`, bottom: `calc(15% + ${scrollY * 0.1}px)`, left: "8%", pointerEvents: "none" }} />
-      <div style={{ position: "absolute", width: 150, height: 150, borderRadius: "50%", background: `radial-gradient(circle, ${t.primary}08, transparent)`, top: `calc(50% - ${scrollY * 0.2}px)`, left: "45%", pointerEvents: "none" }} />
+{/* Parallax orbs */}
+
+<div
+  style={{
+    position: "absolute",
+    width: 300,
+    height: 300,
+    borderRadius: "50%",
+    background: `radial-gradient(circle, ${t.gFrom}12, transparent)`,
+    top: `calc(10% - ${scrollY * 0.15}px)`,
+    right: "5%",
+    pointerEvents: "none",
+  }}
+/>
+
+<div
+  style={{
+    position: "absolute",
+    width: 200,
+    height: 200,
+    borderRadius: "50%",
+    background: `radial-gradient(circle, ${t.gTo}10, transparent)`,
+    bottom: `calc(15% + ${scrollY * 0.1}px)`,
+    left: "8%",
+    pointerEvents: "none",
+  }}
+/>
+
+<div
+  style={{
+    position: "absolute",
+    width: 150,
+    height: 150,
+    borderRadius: "50%",
+    background: `radial-gradient(circle, ${t.primary}08, transparent)`,
+    top: `calc(50% - ${scrollY * 0.2}px)`,
+    left: "45%",
+    pointerEvents: "none",
+  }}
+/>
+
+{/* Text (separate from style) */}
+<div
+  style={{
+    position: "absolute",
+    bottom: "12%",
+    left: "8%",
+    color: t.primary,
+    fontWeight: 600,
+    fontSize: 14,
+  }}
+>
+  Open to Software Engineering, AI/ML & Full-Stack Roles
+</div>
 
       <div style={{ maxWidth: 1080, margin: "0 auto", display: "flex", alignItems: "center", gap: 64, flexWrap: "wrap", justifyContent: "center", position: "relative", zIndex: 1 }}>
         <div style={{ flex: "1 1 440px" }}>
           <div style={{ display: "inline-block", padding: "6px 16px", borderRadius: 20, background: t.primaryLight, border: `1px solid ${t.primary}20`, marginBottom: 20 }}>
-            <span style={{ fontSize: 13, fontWeight: 600, color: t.primary }}>Open to Summer 2026 Co-op</span>
+            <span style={{ fontSize: 13, fontWeight: 600, color: t.primary }}></span>
           </div>
 
           <h1 style={{ fontSize: 56, fontWeight: 900, lineHeight: 1.05, marginBottom: 12, letterSpacing: -2 }}>
