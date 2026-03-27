@@ -75,7 +75,6 @@ export default function Hero({ scrollY }) {
     fontSize: 14,
   }}
 >
-  Open to Software Engineering, AI/ML & Full-Stack Roles
 </div>
 
       <div style={{ maxWidth: 1080, margin: "0 auto", display: "flex", alignItems: "center", gap: 64, flexWrap: "wrap", justifyContent: "center", position: "relative", zIndex: 1 }}>
